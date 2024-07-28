@@ -32,7 +32,7 @@ span{
     color: #4CAF50;
     font-size: 3rem;
 }
-.toggle{
+#toggle{
     display: none;
 }
 nav ul{
