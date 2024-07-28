@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.slideMenu{
+    display: none;
+}
+nav li a.active{
+    color:#4CAF50;
+    text-decoration: underline;
+}
+
+nav{
+    height: 4rem;
+    display: inline-flex;
+    justify-content: space-evenly;
+    background: #cfffd0 ;
+    box-shadow: 0 0 9px rgb(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 1.4rem;
+    gap: 1.5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    font-size: xx-large;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+span{
+    color: #4CAF50;
+    font-size: 3rem;
+}
+.toggle{
+    display: none;
+}
+nav ul{
+    display: inline-flex;
+    list-style: none;
+    gap: 3rem;
+}
+nav li a{
+    color: #000;
+    text-decoration: none;
+}
+.login{
+    display: flex;
+    gap: 3rem;
+}
+.login button{
+    /* width: 50%; */
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+nav li a.active{
+    color:#4CAF50;
+    text-decoration: underline;
+}
+
+/* for Mobile Device */
+@media (max-width: 920px) {
+    .slideMenu{
+        display: none;
+        cursor: pointer;
+        background-color: #d9fcda;
+        font-size: 1.5rem;
+        height: 100%;
+        width: 20rem;
+    }
+    .slideMenu ul{
+        list-style: none;
+        gap: 3rem;
+        display: inline-flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .slideMenu ul a{
+        color: #000;
+        text-decoration: none;
+    }
+    .slideMenu li a.active{
+        color:#4CAF50;
+        text-decoration: underline;
+    }
+    #toggle{
+        cursor: pointer;
+        display: inline;
+        padding: 15px;
+    }
+    .link ul {
+        display: none; /* Hide navigation links */
+        padding: 0;
+        margin: 0;
+    }
+    .login button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
